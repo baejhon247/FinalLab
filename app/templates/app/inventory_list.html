@@ -1,0 +1,32 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+  <div class="inventory-list-page">
+    <h1>Inventory List</h1>
+    <a href="{% url 'inventory_create' %}" class="add-item-btn">+ Add New Inventory Item</a>
+    
+    <table class="inventory-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in inventories %}
+          <tr>
+            <td><a href="{% url 'inventory_detail' item.pk %}">{{ item.name }}</a></td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.price }}</td>
+            <td>
+              <a href="{% url 'inventory_update' item.pk %}">Edit</a> | 
+              <a href="{% url 'inventory_delete' item.pk %}">Delete</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

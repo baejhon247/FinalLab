@@ -1,0 +1,18 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+  <div class="product-list-container">
+    <h2>Product List</h2>
+    <a href="{% url 'product_create' %}" class="create-btn">Create New Product</a>
+    <ul>
+      {% for product in products %}
+        <li>
+          <strong>{{ product.name }}</strong> - ${{ product.price }}
+          <a href="{% url 'product_detail' product.pk %}">View</a>
+          <a href="{% url 'product_update' product.pk %}">Edit</a>
+          <a href="{% url 'product_delete' product.pk %}">Delete</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

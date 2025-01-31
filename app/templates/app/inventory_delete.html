@@ -1,0 +1,16 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+  <div class="delete-inventory-page">
+    <h1>Are you sure you want to delete "{{ inventory.name }}"?</h1>
+    <p><strong>Quantity:</strong> {{ inventory.quantity }}</p>
+    <p><strong>Price:</strong> ${{ inventory.price }}</p>
+
+    <form method="post">
+      {% csrf_token %}
+      <button type="submit">Yes, Delete</button>
+    </form>
+    
+    <a href="{% url 'inventory_list' %}">Cancel</a>
+  </div>
+{% endblock %}

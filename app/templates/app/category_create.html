@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+  <div class="create-category-container">
+    <h2>Create Category</h2>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'category_list' %}">Cancel</a>
+  </div>
+{% endblock %}

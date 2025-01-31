@@ -1,0 +1,9 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+  <h2>Category: {{ category.name }}</h2>
+  <p>Created at: {{ category.created_at }}</p>
+  <a href="{% url 'category_update' category.pk %}">Edit</a> |
+  <a href="{% url 'category_delete' category.pk %}">Delete</a> |
+  <a href="{% url 'category_list' %}">Back to Categories</a>
+{% endblock %}

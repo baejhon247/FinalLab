@@ -1,0 +1,15 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+    
+<div class="update-order-form-container">
+    <h1>Update Order</h1>
+    <form action="{% url 'order_update' object.pk %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Update">
+    </form>
+</div>
+
+
+{% endblock content %}

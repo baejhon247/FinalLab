@@ -1,0 +1,15 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+  <div class="inventory-page">
+    <h1>{% if object %}Edit Inventory{% else %}Create New Inventory{% endif %}</h1>
+    
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">{% if object %}Save Changes{% else %}Create Inventory{% endif %}</button>
+    </form>
+    
+    <a href="{% url 'inventory_list' %}">Back to Inventory List</a>
+  </div>
+{% endblock %}

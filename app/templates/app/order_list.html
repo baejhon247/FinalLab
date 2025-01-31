@@ -1,0 +1,18 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block extra_head %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/order_list.css' %}">
+{% endblock %}
+{% block content %}
+<a href="{% url 'order_create' %}" class="new-order-link">+ New Order</a>
+
+<div class="order-list-container">
+    {% for order in order %}
+       <div class="order r">
+           <h2><a href="{% url 'order_detail' order.pk %}">{{ order.customer }}</a></h2>
+           <a>{{ order.order_detail }}</a>
+       </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}

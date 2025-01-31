@@ -1,0 +1,22 @@
+{% load static %}
+{% block content%}
+
+   
+    <form method="post" style="max-width: 450px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #ffffff; font-family: Arial, sans-serif;">
+            {% csrf_token %}
+            
+        <div class="form-container" style="display: flex; flex-direction: column;">
+            <label for="username" style="font-weight: bold; margin-bottom: 5px; font-size: 14px; color: #555;">Username</label> 
+            <input type="text" placeholder="Enter your username" name="username" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 15px; font-size: 16px;">
+            
+            <label for="password1" style="font-weight: bold; margin-bottom: 5px; font-size: 14px; color: #555;">Password</label>
+            <input type="password" placeholder="Enter your password" name="password1" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 15px; font-size: 16px;">
+            
+            <label for="password2" style="font-weight: bold; margin-bottom: 5px; font-size: 14px; color: #555;">Confirm Password</label>
+            <input type="password" placeholder="Re-enter your password" name="password2" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 15px; font-size: 16px;">
+        </div>
+
+        <button type="submit" style="width: 100%; padding: 12px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px;">Sign Up</button>
+    </form>
+
+{% endblock content %}

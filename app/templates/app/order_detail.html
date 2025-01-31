@@ -1,0 +1,22 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block extra_head %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/order_details.css' %}">
+{% endblock %}
+{% block content %}
+
+<div class="order-container">
+    <div class="order">
+        <h2><a href="">{{ customer.name }}</a></h2>
+        <p>{{ order.customer }}</p>
+        <p>{{ order.Product }}</p>
+        <p>{{ order.total_amount }}</p>
+        <p>{{ order.created_at }}</p>
+        <p>{{ order.updated_at }}</p>
+    </div>
+    
+    <a href="{% url 'order_update' order.pk %}">+ Edit Order</a>
+    <a href="{% url 'order_delete' order.pk %}">- Delete Order</a>
+</div>
+
+{% endblock content %}

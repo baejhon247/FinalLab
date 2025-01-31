@@ -1,0 +1,1776 @@
+/* shop*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+marquee {
+    background-color: #f5f3f0;
+    color: #5f5f5f;
+    font-size: 1.2em;
+    padding: 10px 0;
+    font-weight: bolder;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.product-card p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+.product-card .btn {
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .btn:hover {
+    background-color: #e67e00;
+}
+
+
+/*shop end*/
+
+
+/*nav bar*/
+
+header {
+    background-color: #d3d3d3; /* Light gray background color */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+    flex: 1;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #ff8c00;
+}
+/*nav bar end*/
+
+
+/* about */
+
+section {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+section ul p {
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* about end */
+
+
+
+/*login*/
+/* Style for the login container */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Container width */
+    text-align: center;
+    margin: 0 auto;
+    height: 420px;
+}
+
+/* Title of the form */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style for the input fields and labels */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Forgot Password link */
+.input-group a {
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.input-group a:hover {
+    text-decoration: underline;
+}
+
+/* Submit button styling */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Links section below form */
+.links {
+    margin-top: 15px;
+}
+
+.links a {
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* QR Code styling */
+.qr-code {
+    margin-top: 20px;
+}
+
+.qr-code img {
+    max-width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+/*login end*/
+
+
+
+/*signup*/
+
+/* Centering the Register Container */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px); /* Subtract header and footer height */
+    padding: 20px;
+    background-color: #f4f4f9;
+    box-sizing: border-box;
+    margin: 0 auto;
+  
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8em;
+}
+
+.register-container form {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #555;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #ff8c00;
+}
+
+button {
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e67e00;
+}
+
+.links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.links p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.links a {
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+/*signup end*/
+
+
+/*footer*/
+
+/* Footer Styling */
+footer {
+    background-color: #aaaaaa;
+    color: rgb(43, 42, 42);
+    text-align: center;
+    padding: 10px 0;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+/* Ensure text inside footer is vertically aligned */
+footer p {
+    margin: 0 auto;
+}
+
+/* Style for any links inside footer */
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/*footer end*/
+
+
+
+
+/*fillup form start*/
+
+
+
+
+/*fillup form end*/
+
+
+
+/*order create*/
+.order-form-container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: auto;
+}
+
+.order-form-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.order-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form-container form p {
+    margin-bottom: 10px;
+}
+
+.order-form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.order-form-container input, 
+.order-form-container select, 
+.order-form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.order-form-container input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.order-form-container input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/*order create end*/
+
+
+/*order delete*/
+.edit-order-form-container {
+    font-family: Arial, sans-serif;
+    background-color: #ffeded;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: auto;
+}
+
+.edit-order-form-container h1 {
+    text-align: center;
+    color: #d9534f;
+}
+
+.edit-order-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-order-form-container form p {
+    margin-bottom: 10px;
+}
+
+.edit-order-form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.edit-order-form-container input, 
+.edit-order-form-container select, 
+.edit-order-form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.edit-order-form-container input[type="submit"] {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.edit-order-form-container input[type="submit"]:hover {
+    background: #c9302c;
+}
+
+/*order delete end*/
+
+
+
+/*order detail*/
+.order-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: 20px auto;
+}
+
+.order-container .order {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.order-container h2 a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 20px;
+}
+
+.order-container h2 a:hover {
+    text-decoration: underline;
+}
+
+.order-container p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.order-container a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.order-container a[href*='order_update'] {
+    background: #28a745;
+    color: white;
+    border: none;
+}
+
+.order-container a[href*='order_update']:hover {
+    background: #218838;
+}
+
+.order-container a[href*='order_delete'] {
+    background: #d9534f;
+    color: white;
+    border: none;
+}
+
+.order-container a[href*='order_delete']:hover {
+    background: #c9302c;
+}
+
+/*order detail end*/
+
+
+/*order list*/
+/* Scoped Navigation Styling */
+.nav.right {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+/* Scoped Order List Styling */
+.order-list-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.order-list-container .order.r {
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-list-container .order.r h2 a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.order-list-container .order.r h2 a:hover {
+    text-decoration: underline;
+}
+
+.order-list-container .order.r a {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/*order list end*/
+
+
+/*order update*/
+.update-order-form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: 30px auto;
+}
+
+.update-order-form-container h1 {
+    text-align: center;
+    color: #28a745;
+}
+
+.update-order-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-order-form-container form p {
+    margin-bottom: 10px;
+}
+
+.update-order-form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.update-order-form-container input,
+.update-order-form-container select,
+.update-order-form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.update-order-form-container input[type="submit"] {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.update-order-form-container input[type="submit"]:hover {
+    background: #218838;
+}
+
+/*order update end*/
+
+
+/*logout*/
+
+
+.logout-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.logout-button:hover {
+    text-decoration: underline;
+}
+
+/*logout end*/
+
+
+
+
+/*sign up*/
+
+.signup-container {
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.signup-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.signup-container .form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.signup-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.signup-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.signup-container button:hover {
+    background-color: #0056b3;
+}
+
+
+/*sign up end*/
+
+
+
+
+/*category create*/
+
+/* Scoped styles for the create category form */
+.create-category-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-category-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.create-category-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.create-category-container input,
+.create-category-container select,
+.create-category-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.create-category-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-category-container button:hover {
+    background-color: #0056b3;
+}
+
+.create-category-container a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.create-category-container a:hover {
+    text-decoration: underline;
+}
+
+
+/*category create end*/
+
+
+
+
+/*cat delete*/
+
+/* Scoped styles for the delete category page */
+.delete-category-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffe6e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.delete-category-container h2 {
+    color: #d9534f;
+}
+
+.delete-category-container p {
+    color: #333;
+    font-size: 16px;
+}
+
+.delete-category-container form {
+    margin-top: 10px;
+}
+
+.delete-category-container button {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-category-container button:hover {
+    background-color: #c9302c;
+}
+
+.delete-category-container a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.delete-category-container a:hover {
+    text-decoration: underline;
+}
+
+
+/*cat delete end*/
+
+
+/*cat list*/
+
+/* Scoped styles for the category list */
+.category-list-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-list-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.category-list-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.category-list-container th, .category-list-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.category-list-container th {
+    background-color: #007bff;
+    color: white;
+}
+
+.category-list-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.category-list-container tr:hover {
+    background-color: #ddd;
+}
+
+.category-list-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.category-list-container a:hover {
+    text-decoration: underline;
+}
+
+.category-list-container .create-btn {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.category-list-container .create-btn:hover {
+    background-color: #218838;
+}
+
+/*cat list end*/
+
+
+/*cus list*/
+
+/* Scoped styles for the customer list */
+.customer-list-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-list-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.customer-list-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.customer-list-container th, 
+.customer-list-container td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.customer-list-container th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+}
+
+.customer-list-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.customer-list-container tr:hover {
+    background-color: #ddd;
+}
+
+.customer-list-container .btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.customer-list-container .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.customer-list-container .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.customer-list-container .btn-info {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+}
+
+.customer-list-container .btn-info:hover {
+    background-color: #138496;
+}
+
+.customer-list-container .btn-warning {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+}
+
+.customer-list-container .btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.customer-list-container .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.customer-list-container .btn-danger:hover {
+    background-color: #c82333;
+}
+
+.customer-list-container .text-center {
+    text-align: center;
+    font-weight: bold;
+    color: #777;
+}
+
+
+/*cus list end*/
+
+
+/*cus detail*/
+
+
+/* Scoped styles for the customer details page */
+.customer-detail-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-detail-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.customer-detail-container p {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.customer-detail-container strong {
+    color: #222;
+}
+
+.customer-detail-container .btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.customer-detail-container .btn-warning {
+    background-color: #ffc107;
+    color: black;
+}
+
+.customer-detail-container .btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.customer-detail-container .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.customer-detail-container .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+
+/*cus detail end*/
+
+
+/*prod create*/
+
+/* Scoped styles for the Create Product page */
+.product-create-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-create-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-create-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-create-container form input,
+.product-create-container form select,
+.product-create-container form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.product-create-container button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product-create-container button:hover {
+    background-color: #0056b3;
+}
+
+.product-create-container a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.product-create-container a:hover {
+    text-decoration: underline;
+}
+
+
+/*prod create end*/
+
+
+/*prod list*/
+
+/* Scoped styles for the Product List page */
+.product-list-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-list-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-list-container .create-btn {
+    display: block;
+    text-align: center;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.product-list-container .create-btn:hover {
+    background-color: #218838;
+}
+
+.product-list-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-list-container li {
+    background: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-list-container li strong {
+    font-size: 16px;
+    color: #333;
+}
+
+.product-list-container li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.product-list-container li a:nth-child(2) { /* View */
+    background-color: #007bff;
+    color: white;
+}
+
+.product-list-container li a:nth-child(2):hover {
+    background-color: #0056b3;
+}
+
+.product-list-container li a:nth-child(3) { /* Edit */
+    background-color: #ffc107;
+    color: black;
+}
+
+.product-list-container li a:nth-child(3):hover {
+    background-color: #e0a800;
+}
+
+.product-list-container li a:nth-child(4) { /* Delete */
+    background-color: #dc3545;
+    color: white;
+}
+
+.product-list-container li a:nth-child(4):hover {
+    background-color: #c82333;
+}
+
+
+/*prod list end*/
+
+/*prod detail*/
+
+/* Scoped styles for the Product Detail page */
+.product-detail-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-detail-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-detail-container p {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.product-detail-container strong {
+    color: #222;
+}
+
+.product-detail-container a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.product-detail-container a:nth-child(6) { /* Edit */
+    background-color: #ffc107;
+    color: black;
+}
+
+.product-detail-container a:nth-child(6):hover {
+    background-color: #e0a800;
+}
+
+.product-detail-container a:nth-child(7) { /* Delete */
+    background-color: #dc3545;
+    color: white;
+}
+
+.product-detail-container a:nth-child(7):hover {
+    background-color: #c82333;
+}
+
+.product-detail-container a:nth-child(8) { /* Back to list */
+    background-color: #007bff;
+    color: white;
+}
+
+.product-detail-container a:nth-child(8):hover {
+    background-color: #0056b3;
+}
+
+
+/*prod detail end*/
+
+
+/*prod delete*/
+
+/* Target only elements within the delete-product container */
+.delete-product-container h2 {
+    font-size: 2em;
+    color: #b33a3a;
+}
+
+.delete-product-container p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.delete-product-container form {
+    margin-top: 20px;
+}
+
+.delete-product-container button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    width: auto;
+    cursor: pointer;
+}
+
+.delete-product-container button:hover {
+    background-color: #c9302c;
+}
+
+.delete-product-container a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #5bc0de;
+}
+
+.delete-product-container a:hover {
+    text-decoration: underline;
+}
+
+/*prod delete end*/
+
+
+/*order delete*/
+
+/* Scope the styles to the container of the delete order page */
+.delete-order-container h1 {
+    font-size: 2em;
+    color: #d9534f;  /* Red color to highlight delete action */
+}
+
+.delete-order-container form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.delete-order-container input[type="submit"] {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 10px;
+    width: auto;
+}
+
+.delete-order-container input[type="submit"]:hover {
+    background-color: #c9302c;
+}
+
+.delete-order-container form p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.delete-order-container form .form-row {
+    margin-bottom: 15px;
+}
+
+
+/*order delete end*/
+
+
+
+/*order detail*/
+
+/* Scope the styles to the container of the order page */
+.order-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.order-container .order {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.order-container .order h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.order-container .order p {
+    font-size: 1.1em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.order-container .order p strong {
+    color: #333;
+}
+
+/* Links for Edit/Delete Order */
+.order-container a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #5bc0de;
+    text-decoration: none;
+}
+
+.order-container a:hover {
+    text-decoration: underline;
+}
+
+/* Additional style for Delete link */
+.order-container a[href*="order_delete"] {
+    color: #d9534f;
+}
+
+.order-container a[href*="order_delete"]:hover {
+    color: #c9302c;
+}
+
+
+/*order detail end*/
+
+
+
+/*inventory create*/
+/* Styles for the inventory page */
+.inventory-page h1 {
+    color: #4CAF50;           /* Set a green color for the header */
+    font-size: 2.5em;         /* Larger header font */
+    text-align: center;       /* Center-align the header */
+  }
+  
+  .inventory-page form {
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 30px;            /* Add some padding */
+    border-radius: 10px;      /* Rounded corners for the form */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 600px;         /* Limit the width of the form */
+    margin: 20px auto;        /* Center the form on the page */
+  }
+  
+  .inventory-page button {
+    background-color: #007BFF; /* Blue background for the button */
+    color: white;              /* White text */
+    padding: 12px 24px;        /* Button padding */
+    border: none;              /* Remove border */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 1.2em;          /* Larger text for readability */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .inventory-page button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .inventory-page a {
+    display: inline-block;     /* Make the link a block element for easier styling */
+    margin-top: 20px;          /* Space above the link */
+    color: #333;               /* Dark grey color */
+    font-size: 1.1em;          /* Slightly larger text */
+    text-decoration: none;     /* Remove underline */
+    transition: color 0.3s;    /* Smooth transition for color change */
+  }
+  
+  .inventory-page a:hover {
+    color: #007BFF;            /* Blue color on hover */
+    text-decoration: underline; 
+  }
+  
+/*inventory create end*/
+
+
+/*inventory delete*/
+
+/* Styles specific to the delete inventory page */
+.delete-inventory-page {
+    max-width: 600px;          /* Limit the width of the content */
+    margin: 0 auto;            /* Center the content */
+    padding: 20px;             /* Padding around the content */
+    background-color: #f8f8f8; /* Light grey background */
+    border-radius: 10px;       /* Rounded corners for the container */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .delete-inventory-page h1 {
+    color: #D9534F;            /* Red color for the header */
+    font-size: 2em;            /* Larger font size for emphasis */
+    text-align: center;        /* Center the heading */
+  }
+  
+  .delete-inventory-page p {
+    font-size: 1.2em;          /* Larger text for details */
+    line-height: 1.6;          /* More space between lines for readability */
+  }
+  
+  .delete-inventory-page button {
+    background-color: #D9534F; /* Red background for the button */
+    color: white;              /* White text color */
+    padding: 12px 24px;        /* Button padding */
+    border: none;              /* Remove border */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 1.2em;          /* Slightly larger text */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+  
+  .delete-inventory-page button:hover {
+    background-color: #c9302c; /* Darker red on hover */
+  }
+  
+  .delete-inventory-page a {
+    display: inline-block;     /* Make the link a block element */
+    margin-top: 20px;          /* Space above the link */
+    color: #5bc0de;            /* Light blue color for the cancel link */
+    font-size: 1.1em;          /* Slightly larger text */
+    text-decoration: none;     /* Remove underline */
+    transition: color 0.3s;    /* Smooth transition for color change */
+  }
+  
+  .delete-inventory-page a:hover {
+    color: #31708f;            /* Darker blue color on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+
+/*inventory delete end*/
+
+
+/*inventory update*/
+
+/* Styles specific to the Edit Customer page */
+.edit-customer-page {
+    max-width: 800px;          /* Limit the width of the form container */
+    margin: 0 auto;            /* Center the content */
+    padding: 30px;             /* Add padding around the content */
+    background-color: #f9f9f9; /* Light background for the form container */
+    border-radius: 8px;        /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .edit-customer-page h2 {
+    font-size: 2em;            /* Large heading */
+    color: #333;               /* Dark grey color */
+    margin-bottom: 20px;       /* Space below the heading */
+    text-align: center;        /* Center the heading */
+  }
+  
+  .edit-customer-page form {
+    display: flex;
+    flex-direction: column;    /* Stack form elements vertically */
+    gap: 15px;                 /* Add space between form fields */
+  }
+  
+  .edit-customer-page form button {
+    background-color: #007bff; /* Blue background for the update button */
+    color: white;              /* White text */
+    padding: 12px 20px;        /* Button padding */
+    border: none;              /* Remove border */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 1.1em;          /* Slightly larger text */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    width: 200px;              /* Set a width for consistency */
+    align-self: center;        /* Center the button */
+  }
+  
+  .edit-customer-page form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .edit-customer-page a.btn {
+    text-align: center;        /* Center the cancel button */
+    width: 200px;              /* Match the cancel button width with the update button */
+    align-self: center;        /* Center the cancel button */
+  }
+  
+  .edit-customer-page .btn-secondary {
+    background-color: #6c757d; /* Grey background for cancel button */
+    color: white;              /* White text */
+    text-decoration: none;     /* Remove underline */
+    padding: 12px 20px;        /* Button padding */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 1.1em;          /* Slightly larger text */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+  
+  .edit-customer-page .btn-secondary:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+  }
+  
+  .edit-customer-page form .form-group {
+    display: flex;
+    flex-direction: column;    /* Stack label and input vertically */
+  }
+  
+  .edit-customer-page form .form-group label {
+    font-size: 1.1em;          /* Slightly larger label text */
+    margin-bottom: 5px;        /* Space between label and input */
+    color: #333;               /* Dark grey label color */
+  }
+  
+  .edit-customer-page form .form-group input,
+  .edit-customer-page form .form-group select,
+  .edit-customer-page form .form-group textarea {
+    padding: 10px;             /* Add padding inside input fields */
+    font-size: 1em;            /* Set font size */
+    border: 1px solid #ccc;    /* Light grey border */
+    border-radius: 5px;        /* Rounded corners */
+  }
+  
+  .edit-customer-page form .form-group input:focus,
+  .edit-customer-page form .form-group select:focus,
+  .edit-customer-page form .form-group textarea:focus {
+    border-color: #007bff;     /* Highlight border with blue when focused */
+    outline: none;             /* Remove default focus outline */
+  }
+  
+  
+
+
+/*inventory update end*/
+
+
+
+/*inventory detail*/
+
+/*inventory detail end*/
+
+
+
+/*inventory list*/
+
+/* Styles specific to the Inventory List page */
+.inventory-list-page {
+    max-width: 1200px;       /* Max width to keep the page from being too wide */
+    margin: 0 auto;          /* Center the content */
+    padding: 20px;           /* Add padding around the content */
+  }
+  
+  .inventory-list-page h1 {
+    font-size: 2.5em;        /* Larger header */
+    color: #333;             /* Dark grey color */
+    text-align: center;      /* Center align the header */
+    margin-bottom: 20px;     /* Space below the header */
+  }
+  
+  .inventory-list-page .add-item-btn {
+    display: inline-block;   /* Make it a block-level element for padding */
+    background-color: #28a745; /* Green background for the "Add New Inventory Item" button */
+    color: white;            /* White text color */
+    padding: 10px 20px;      /* Padding around the button */
+    text-decoration: none;   /* Remove underline */
+    font-size: 1.1em;        /* Slightly larger text */
+    border-radius: 5px;      /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-bottom: 20px;     /* Space below the button */
+    border: none;
+  }
+  
+  .inventory-list-page .add-item-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .inventory-list-page .inventory-table {
+    width: 100%;             /* Make the table take up full width */
+    border-collapse: collapse; /* Remove spacing between table cells */
+    margin-top: 20px;        /* Space above the table */
+  }
+  
+  .inventory-list-page .inventory-table th,
+  .inventory-list-page .inventory-table td {
+    padding: 12px;           /* Padding inside the table cells */
+    text-align: left;        /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Light border under each row */
+  }
+  
+  .inventory-list-page .inventory-table th {
+    background-color: #f4f4f4; /* Light grey background for table headers */
+    font-size: 1.1em;            /* Slightly larger font for table headers */
+    font-weight: bold;           /* Bold headers */
+  }
+  
+  .inventory-list-page .inventory-table tr:hover {
+    background-color: #f1f1f1; /* Highlight rows when hovered */
+  }
+  
+  .inventory-list-page .inventory-table a {
+    color: #007bff;             /* Blue color for links */
+    text-decoration: none;      /* Remove underline */
+  }
+  
+  .inventory-list-page .inventory-table a:hover {
+    text-decoration: underline; /* Underline links when hovered */
+  }
+  
+
+/*inventory list*/
